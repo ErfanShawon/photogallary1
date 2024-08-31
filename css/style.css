@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 1170px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    align-items: center;
+}
+#photoContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+inset: 0;
+margin-top: 200px;
+}
+#photoContainer img{
+max-width: 20%;
+margin: auto;
+display: block;
+
+}
+.photoGallary{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(4, 3, 3, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+}
+.photoGallary.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+.photoGallary img{
+    max-width: 25%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.cancelBtn{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    text-align: center;
+    line-height: 40px;
+
+}
+.right{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.left{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.btn{
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color:black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    display: block;
+    position: absolute;
+    right: 40%;
+    top: 92%;
+}
+.btn a{
+    color: white;
+}
+.copy{
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color:black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 92%;
+}
+.copy a{
+    color: white;
+}
